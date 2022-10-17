@@ -142,6 +142,8 @@ export default function Editor(): JSX.Element {
             ) : (
               <HistoryPlugin externalHistoryState={historyState} />
             )}
+
+            {/*Editor*/}
             <RichTextPlugin
               contentEditable={
                 <div className="editor-scroller">
@@ -152,6 +154,7 @@ export default function Editor(): JSX.Element {
               }
               placeholder={placeholder}
             />
+
             <MarkdownShortcutPlugin />
             <CodeHighlightPlugin />
             <ListPlugin />
